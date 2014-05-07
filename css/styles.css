@@ -1,0 +1,228 @@
+/*RULES FOR ALL SIZES**/
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,900,400italic);
+
+body {
+	font-size: 100%;
+	font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-family: "helvetica", arial, sans-serif;
+    background: #19437f;  
+    
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+img { 
+	max-width: 100%;
+	}
+
+header a.logo {
+    display: block;
+    position: absolute;
+
+}
+
+header {
+	height: 8.775em;
+	background: #e2d9c8 url(../images/banner.png) no-repeat;
+    
+}
+
+
+.home_page {
+    max-width: 100%;
+    background: #fff url(../images/swirl.png);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+/*****Navigation*******/
+
+
+@media only screen and (min-width: 20em) {
+
+
+/**put the rules in here for mobile first**/
+
+h1 { 
+    font-family: 'Alegreya Sans', "arial black", sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #19437f;
+    }
+   
+h2 { 
+    font-size: 1.2em;
+    color: #4f6234;
+    }
+
+p{ 
+    margin: 0 0 .75em 0;
+}
+
+a { 
+    color: #000;
+}
+
+a:hover {
+    color: #fff;
+}
+
+
+ 
+a.more{
+    color: #19437f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9em;
+    font-family: 'Alegreya Sans', 'helvetica', 'arial', sans-serif;
+    font-weight: 400;
+    font-style:italic;
+    margin: .5em 0 0 0;
+    padding: 0 .9em 0 0;
+    background: url(../images/more_arrow.png) no-repeat right 0;
+}
+
+a.more:hover {
+    background-position: right -3.85em;
+    color: #1F529C;
+}
+
+
+
+.main h3 {
+    font-size: 1.1em;
+    margin: 0;
+    color: #4f6234;
+}
+
+.main p {
+    line-height: 1.2em;
+    font-size: .9em;
+    margin-bottom: .5em;
+    color: #666;
+}
+
+.main { 
+    background-repeat: no-repeat;
+}
+
+.main.beer_content {
+    background-image: url(../images/beer_icon.png);
+    background-position: 2.125em 1.2em;
+    }  
+
+.main.events {
+    background-image: url(../images/music_icon2.png);
+    background-position: .8em 1em;
+    } 
+
+.main.featured {
+    background-image: url(../images/grasshoppercolor_icon.png);
+    background-position: 2em .07em;
+    }
+
+.main.about {
+    background-image: url(../images/history_icon2.png);
+    background-position: .8em 1em;
+    }
+
+nav {
+    padding:  0;
+    width: 100%;
+    background-color: #19437f;
+    }
+
+}<!--end of first querie-->
+
+
+
+
+
+/*these rules won't work within media querie. why*/
+
+
+.content_wrapper {
+    padding: 0;
+}
+
+/****position the main content**/
+
+.content_wrapper .main {
+    width: auto;
+    padding: .8em 0 0 0;
+    border-top: .0625em solid #ccc;
+}
+
+.content_wrapper .main .content {
+    padding: 0 1.25em .3125em 5.625em;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-size: .9em;
+    color: #e2d9c8;
+    margin-bottom: .09em;
+    /*margin: .9em;*/
+    padding: .5625em;
+    border: .07em solid #1F529C;   
+   -moz-border-radius: .375em 0;
+    -webkit-border-radius: .375em 0;
+    border-radius: .375em 0;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.welcome {
+    margin: 0;
+    border-top: .0625em solid #ccc;
+    padding: 0 .9em;
+}
+
+.welcome p {
+    font-size: .9em;
+    line-height: 1.2em;
+    color: #666;
+}
+
+.contact {
+    width: 40%;
+    color: #666;
+    border-left: .09em solid #666;
+    padding-left: .5em;
+    margin-left: 50%;
+    
+}
+
+.contact p{
+    margin-bottom: -.0625em;
+    font-size: .9em;
+    
+}
+
+p.copyright {
+    float: left;
+    margin: .5em 0 0 .5em;
+    width: 40%;
+    font-size: .8em;
+    
+}
+
+footer{
+    border-top: .0625em solid #ccc;
+    font-size: .75em;
+    color:#666;
+    background-color: #e2d9c8;
+    padding: .3125em;
+}
